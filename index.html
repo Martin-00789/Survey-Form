@@ -1,0 +1,73 @@
+<!DOCTIPE html>
+<htlm lang="en">
+  <head>
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body id="body">
+    <h1 id="title">Pegasus Films Survey Form</h1>
+    <p id="description">Thank you for taking the time to let us know your opinion</p>
+    <form id="survey-form">
+      <div>
+        <label id="name-label">
+        Name<input id="name" type="text" name="name" placeholder="Enter your name" required>
+        </label>
+      </div>
+     <div>
+       <label id="email-label">Email
+         <input id="email" type="email" name="email" placeholder="Enter your email" required>
+       </label>
+     </div>
+     <div>
+       <label id="number-label">Age
+         <input id="number" type="number" name="age"min="18" max="100" placeholder="Enter your age">
+       </label>
+      </div>
+      <label class="comend">What do you think about the quality of services?
+        <select id="dropdown">
+          <option value="">(select one)</option>
+          <option value="1">Is perfect</option>
+          <option value="2">Is pretty good</option>
+          <option value="3">Is good</option>
+          <option value="4">Is decent</option>
+          <option value="5">Is bad</option>
+          <option value="6">Is very bad</option>
+        </select>
+      </label>
+        <div class="comend">
+          <label>Would you recommend Pegasus Films to a friend?</label>
+          <label>
+            <input type="radio" name="recommendation" value="1" class="comend"> Yes
+          </label>
+          <label>
+            <input type="radio" name="recommendation" value="2" class="comend"> Maybe
+          </label>
+          <label>
+            <input type="radio" name="recommendation" value="3" class="comend"> No
+          </label>
+        </div>
+       <div class="genres">
+         <label>What are the genres you like? (Check all that apply)</label> 
+         <label><input type="checkbox" value="1" > Action</label>
+         <label><input type="checkbox" value="2"> Animation</label>
+         <label><input type="checkbox" value="3" > Drama</label>
+         <label><input type="checkbox" value="4" > Fantasy</label>
+         <label><input type="checkbox" value="5" > Horror</label>
+         <label><input type="checkbox" value="6" > Musical</label>
+         <label><input type="checkbox" value="7" > Romantic comedy</label>
+         <label><input type="checkbox" value="8" > Science fiction</label>
+         <label><input type="checkbox" value="9" > Thriller</label>
+         <label><input type="checkbox" value="10" > Western</label>
+       </div>
+       <div class="area"> 
+         <label>
+            <p>Any comments or suggestions?</p>
+           <textarea class="area" name="comment" placeholder="leave us your comment here..." rows="3" cols="30" ></textarea>
+         </label> 
+       </div>
+          <div class="submit">
+            <button class="submit" id="submit"  type="submit">Submit
+            </button>
+          </div>
+    </form>
+  </body>
+  </html>
